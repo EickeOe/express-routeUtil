@@ -6,11 +6,13 @@
   ### 2.配置
     在express项目根目录新建route.json文件，用于存放routeUtil的配置
     json文件内容：
+    ```javascript
         {
           "class-route-path":boolean,
           "scan-path":string,
           "route-property":string
         }
+        ```
      class-route-path：表示是否启用路由js文件名级的路径,默认为true。
         例如：路由js名为demo.js，则此js中的接口路径为/demo/xxx
      scan-path：表示route目录的文件夹名或相对路径，默认为'routes'。
@@ -34,9 +36,12 @@
             
                 }
             };
+             ```
          访问localhost:port/demo/时，展示demo root'
          访问localhost:port/demo/child/时，展示demo child'
    ### 4.加入项目
+   ```javascript
     let route = require('./util/routeUtil');
     app.use(route);
+    ```
     这时，此工具已经加入项目中
