@@ -23,25 +23,25 @@
     例如：
         routes/demo.js
 ```javascript
-            exports.autowired = {
-                'get' : {
-                    '/' : (req, res, next)=>{
-                        res.send('demo root');
-                    },
-                    '/child' : (req, res, next)=>{
-                        res.send('demo child');
-                     }
+        exports.autowired = {
+            'get' : {
+                '/' : (req, res, next)=>{
+                    res.send('demo root');
                 },
-                'post' : {
-            
-                }
-            };
+                '/child' : (req, res, next)=>{
+                    res.send('demo child');
+                 }
+            },
+            'post' : {
+
+            }
+        };
 ```
-         访问localhost:port/demo/时，展示demo root'
-         访问localhost:port/demo/child/时，展示demo child'
+   访问localhost:port/demo/时，展示demo root'
+   访问localhost:port/demo/child/时，展示demo child'
    ### 4.加入项目
 ```javascript
     let route = require('./util/routeUtil');
     app.use(route);
 ```
-    这时，此工具已经加入项目中
+   这时，此工具已经加入项目中
