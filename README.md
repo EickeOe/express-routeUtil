@@ -22,7 +22,7 @@
    ### 3.route.js写法
     例如：
         routes/demo.js
-        ```javascript
+   ```javascript
             exports.autowired = {
                 'get' : {
                     '/' : (req, res, next)=>{
@@ -43,5 +43,5 @@
    ```javascript
     let route = require('./util/routeUtil');
     app.use(route);
-    ```
+
     这时，此工具已经加入项目中
