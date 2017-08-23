@@ -28,7 +28,7 @@
                     '/' : (req, res, next)=>{
                         res.send('demo root');
                     },
-                    '/child : (req, res, next)=>{
+                    '/child' : (req, res, next)=>{
                         res.send('demo child');
                      }
                 },
