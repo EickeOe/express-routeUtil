@@ -13,12 +13,12 @@
           "route-property":string
         }
 ```
-     class-route-path：表示是否启用路由js文件名级的路径,默认为true。
-        例如：路由js名为demo.js，则此js中的接口路径为/demo/xxx
-     scan-path：表示route目录的文件夹名或相对路径，默认为'routes'。
-        例如：我的路由js存放在routes文件夹下，则工具就会扫描routes目录
-      route-property：表示工具引用的属性入口，默认为autowired。
-        例如：我的路由js设置exports.autowired = {...}，则此工具就会引用autowired自动配置路由
+  class-route-path：表示是否启用路由js文件名级的路径,默认为true。
+    例如：路由js名为demo.js，则此js中的接口路径为/demo/xxx
+  scan-path：表示route目录的文件夹名或相对路径，默认为'routes'。
+    例如：我的路由js存放在routes文件夹下，则工具就会扫描routes目录
+  route-property：表示工具引用的属性入口，默认为autowired。
+    例如：我的路由js设置exports.autowired = {...}，则此工具就会引用autowired自动配置路由
    ### 3.route.js写法
     例如：
         routes/demo.js
